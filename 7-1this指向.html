@@ -8,6 +8,9 @@
 </head>
 <body>
     <script>
+        function fn() {
+            console.log(this);//this指向window，普通函数里面的this
+        }
         const obj = {
             name: "test",
             a() {
